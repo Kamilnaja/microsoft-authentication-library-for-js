@@ -59,7 +59,7 @@ extends:
                 break: true
 
         stages:
-            - stage: e2e_test
+            - stage: Test_E2E # Must be prefixed with Test_ or PPE_
               displayName: "3P E2E Tests"
               jobs:
                 - ${{ if eq(parameters.runBrowserTests, true) }}:
